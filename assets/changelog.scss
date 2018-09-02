@@ -1,0 +1,83 @@
+$tag-added: #32b643;
+$tag-changed:#ffb700;
+$tag-deprecated: #acb3c2;
+$tag-removed: #2176ff;
+$tag-fixed: #754668;
+$tag-security: #e85600;
+
+// $primary-color: #e54747;
+
+// Variables and mixins
+@import "spectre/src/variables";
+@import "spectre/src/mixins";
+
+/*! Spectre.css v#{$version} | MIT License | github.com/picturepan2/spectre */
+// Reset and dependencies
+@import "spectre/src/normalize";
+@import "spectre/src/base";
+
+// Elements
+@import "spectre/src/typography";
+@import "spectre/src/asian";
+@import "spectre/src/tables";
+@import "spectre/src/buttons";
+@import "spectre/src/forms";
+@import "spectre/src/labels";
+@import "spectre/src/codes";
+@import "spectre/src/media";
+
+// Layout
+@import "spectre/src/layout";
+@import "spectre/src/navbar";
+
+// Components
+@import "spectre/src/accordions";
+@import "spectre/src/avatars";
+@import "spectre/src/badges";
+@import "spectre/src/breadcrumbs";
+@import "spectre/src/bars";
+@import "spectre/src/cards";
+@import "spectre/src/chips";
+@import "spectre/src/dropdowns";
+@import "spectre/src/empty";
+@import "spectre/src/menus";
+@import "spectre/src/modals";
+@import "spectre/src/navs";
+@import "spectre/src/pagination";
+@import "spectre/src/panels";
+@import "spectre/src/popovers";
+@import "spectre/src/steps";
+@import "spectre/src/tabs";
+@import "spectre/src/tiles";
+@import "spectre/src/toasts";
+@import "spectre/src/tooltips";
+
+// Utility classes
+@import "spectre/src/animations";
+@import "spectre/src/utilities";
+
+@import "spectre/src/timelines";
+
+
+.tag-added {
+    background: $tag-added;
+}
+.tag-changed {
+    background: $tag-changed;
+}
+
+.tag-deprecated {
+    background: $tag-deprecated;
+}
+
+.tag-removed {
+    background: $tag-removed;
+}
+
+.tag-fixed {
+    background: $tag-fixed;
+}
+
+.tag-security {
+    background: $tag-security;
+}

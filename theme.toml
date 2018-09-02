@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/surfly/hugo-changelog-theme/blob/master/LICENSE"
 description = "Theme to display a changelog"
 homepage = "https://github.com/surfly/hugo-changelog-theme"
-tags = ["chnagelog"]
+tags = ["changelog"]
 features = []
 min_version = "0.41"
 
