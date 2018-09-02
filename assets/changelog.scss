@@ -81,3 +81,18 @@ $tag-security: #e85600;
 .tag-security {
     background: $tag-security;
 }
+
+.full-screen-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    font-size: 200%;
+    text-decoration: none;
+    color: #363636;
+}
+.full-screen-message a {
+    display: inline-block;
+}
