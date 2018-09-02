@@ -82,6 +82,10 @@ $tag-security: #e85600;
     background: $tag-security;
 }
 
+.changes li {
+    list-style: none;
+}
+
 .full-screen-message {
     display: flex;
     flex-direction: column;
