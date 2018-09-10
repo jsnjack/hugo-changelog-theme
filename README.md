@@ -14,3 +14,9 @@ A [Hugo](https://gohugo.io/) theme to display changelog
 
 # Shortcodes
  - `{{% tag fixed %}}` - create a specific tag before entry text. Available tag types are: added, changed, fixed, deprecated, removed, security
+
+# Development
+## Serve example website
+```bash
+cd exampleSite && hugo serve --theme hugo-changelog-theme --themesDir ../../
+```
