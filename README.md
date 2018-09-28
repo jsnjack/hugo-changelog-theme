@@ -15,6 +15,13 @@ A [Hugo](https://gohugo.io/) theme to display changelog
 # Shortcodes
  - `{{% tag fixed %}}` - create a specific tag before entry text. Available tag types are: added, changed, fixed, deprecated, removed, security
 
+# Settings
+```
+[params]
+    customCSS = ["css/styles.css"]  # List of css files to include on the website. Reltive to the static/ folder
+    disableOriginalStyles = true  # Do not include original CSS styles
+```
+
 # Development
 ## Serve example website
 ```bash
