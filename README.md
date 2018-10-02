@@ -25,5 +25,5 @@ A [Hugo](https://gohugo.io/) theme to display changelog
 # Development
 ## Serve example website
 ```bash
-cd exampleSite && hugo serve --theme hugo-changelog-theme --themesDir ../../
+cd exampleSite && hugo serve --theme hugo-changelog-theme --themesDir ../../ --baseURL http://localhost/
 ```
