@@ -10,20 +10,22 @@
                 {{ $paginator := .Paginate ( where .Pages.ByWeight.Reverse "Section" "released" ) }}
 
                 <div class="section timeline">
-
                     {{ if eq $paginator.PageNumber 1 }}
-                        <div class="timeline-item experimental">
-                            <div class="timeline-left">
-                                <div class="timeline-icon"></div>
-                            </div>
-                            <div class="changes timeline-content">
-                                <div>
-                                    {{ range where .Pages "Section" "experimental"}}
-                                        {{ .Content }}
-                                    {{ end }}
+                            {{ $experimentalPages := where .Pages "Section" "experimental" }}
+                            {{ if $experimentalPages }}
+                                <div class="timeline-item experimental">
+                                    <div class="timeline-left">
+                                        <div class="timeline-icon"></div>
+                                    </div>
+                                    <div class="changes timeline-content">
+                                        <div>
+                                            {{ range $experimentalPages }}
+                                                {{ .Content }}
+                                            {{ end }}
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            {{ end }}
                     {{ end }}
 
                     {{ range $paginator.Pages }}
