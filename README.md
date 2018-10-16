@@ -21,6 +21,12 @@ A [Hugo](https://gohugo.io/) theme to display a changelog
  - `release.py` - moves changes from the `experimental/` folder to the `released/` folder, assigns version number and generates release-commit
  - `.githooks/post-merge` - verifies that `experimental/` folder is empty during the merge from the working branch to the stable branch
 
+## Dependencies
+ - For release script:
+   ```bash
+    sudo pip install python-frontmatter
+   ```
+
 ## Description
  1. When a pull request is ready, a developer creates a changelog entry:
     ```bash
