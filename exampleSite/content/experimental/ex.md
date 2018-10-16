@@ -5,5 +5,5 @@ weight: 1
 ---
 
 - {{% tag added %}} Add a test for template variable overwrite
-- {{% tag changed %}} Update to Go 1.11
+- {{% tag changed %}} `Update to Go` 1.11
 

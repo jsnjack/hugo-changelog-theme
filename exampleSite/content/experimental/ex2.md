@@ -4,5 +4,5 @@ date: 2018-09-02T20:46:47+02:00
 weight: 1
 ---
 
-- {{% tag fixed %}} Space between ul elements
+- {{% tag fixed %}} Space between `ul` elements
 
