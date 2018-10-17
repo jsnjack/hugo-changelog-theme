@@ -57,7 +57,6 @@ A [Hugo](https://gohugo.io/) theme to display a changelog
 ```
 [params]
     customCSS = ["css/styles.css"]  # List of css files to include on the website. Reltive to the static/ folder
-    disableOriginalStyles = true  # Do not include original CSS styles
 ```
 
 # Development
