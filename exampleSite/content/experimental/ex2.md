@@ -1,8 +1,8 @@
 ---
-title: "2018-09-15"
+title: "(2018-09-15)"
 date: 2018-09-02T20:46:47+02:00
 weight: 1
-versionPrefix: v
+version:
 ---
 
 - {{% tag fixed %}} Space between `ul` elements
