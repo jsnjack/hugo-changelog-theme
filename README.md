@@ -8,6 +8,13 @@ A [Hugo](https://gohugo.io/) theme to display a changelog
  - Pagination
  - Mobile friendly
 
+# How to install
+ - Clone the repository with `--recursive` flag as the theme includes submodule
+   ```bash
+   git clone git@github.com:jsnjack/hugo-changelog-theme.git --recursive
+   ```
+ - Use hugo extended version
+
 # Workflow
 
 ## Conventions
