@@ -26,12 +26,16 @@ $tag-security: #e85600;
 // @import "spectre/src/codes";
 // @import "spectre/src/media";
 
+// Icons
+@import "spectre/src/icons/icons-core";
+@import "spectre/src/icons/icons-navigation";
+
 // Layout
 @import "spectre/src/layout";
 // @import "spectre/src/navbar";
 
 // Components
-// @import "spectre/src/accordions";
+@import "spectre/src/accordions";
 // @import "spectre/src/avatars";
 // @import "spectre/src/badges";
 // @import "spectre/src/breadcrumbs";
@@ -103,6 +107,22 @@ $tag-security: #e85600;
 }
 .full-screen-message a {
     display: inline-block;
+}
+
+.deprecated {
+    border-radius: 10px;
+
+    label {
+        cursor: pointer;
+    }
+
+    .accordion-body {
+        margin-top: 1rem;
+
+        .timeline-item::before {
+            background-color: #ffb700;
+        }
+    }
 }
 
 .experimental ul {
