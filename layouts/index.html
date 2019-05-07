@@ -20,19 +20,19 @@
                                     <span class="label label-rounded label-warning">{{ len ($deprecatedFeatures) }}</span> deprecated features
                                 </label>
                                 <div class="accordion-body">
+                                    {{ range ($deprecatedFeatures.ByParam "removal_date").Reverse }}
                                     <div class="timeline-item">
                                         <div class="timeline-left">
                                             <div class="timeline-icon"></div>
                                         </div>
                                         <div class="timeline-content">
                                             <div>
-                                                {{ range $deprecatedFeatures }}
-                                                    <h6>{{ .Params.removal_date }}</h6>
-                                                    {{ .Content }}
-                                                {{ end }}
+                                                <h6>{{ .Params.removal_date }}</h6>
+                                                {{ .Content }}
                                             </div>
                                         </div>
                                     </div>
+                                    {{ end }}
                                 </div>
                             </div>
                         {{ end }}
