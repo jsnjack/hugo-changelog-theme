@@ -11,21 +11,47 @@
 
                 <div class="section timeline">
                     {{ if eq $paginator.PageNumber 1 }}
-                            {{ $experimentalPages := where .Pages "Section" "experimental" }}
-                            {{ if $experimentalPages }}
-                                <div class="timeline-item experimental">
-                                    <div class="timeline-left">
-                                        <div class="timeline-icon"></div>
-                                    </div>
-                                    <div class="changes timeline-content">
-                                        <div>
-                                            {{ range $experimentalPages }}
+                        {{ $deprecatedFeatures := where .Pages "Section" "deprecated" }}
+                        {{ if $deprecatedFeatures }}
+                            <div class="accordion deprecated">
+                                <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+                                <label class="accordion-header" for="accordion-1">
+                                    <i class="icon icon-arrow-right mr-1"></i>
+                                    <span class="label label-rounded label-warning">{{ len ($deprecatedFeatures) }}</span> deprecated features
+                                </label>
+                                <div class="accordion-body">
+                                    {{ range ($deprecatedFeatures.ByParam "removal_date").Reverse }}
+                                    <div class="timeline-item">
+                                        <div class="timeline-left">
+                                            <div class="timeline-icon"></div>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div>
+                                                <h6>{{ .Params.removal_date }}</h6>
                                                 {{ .Content }}
-                                            {{ end }}
+                                            </div>
                                         </div>
                                     </div>
+                                    {{ end }}
                                 </div>
-                            {{ end }}
+                            </div>
+                        {{ end }}
+
+                        {{ $experimentalPages := where .Pages "Section" "experimental" }}
+                        {{ if $experimentalPages }}
+                            <div class="timeline-item experimental">
+                                <div class="timeline-left">
+                                    <div class="timeline-icon"></div>
+                                </div>
+                                <div class="changes timeline-content">
+                                    <div>
+                                        {{ range $experimentalPages }}
+                                            {{ .Content }}
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            </div>
+                        {{ end }}
                     {{ end }}
 
                     {{ range $paginator.Pages }}
