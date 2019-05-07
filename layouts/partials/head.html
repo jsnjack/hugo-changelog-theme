@@ -16,7 +16,9 @@
   <!-- Icons -->
 
   <!-- RSS -->
-  <link href="{{ .RSSLink | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
 
   {{ $scss := resources.Get "changelog.scss" }}
   {{ $style := $scss | resources.ToCSS | resources.Minify }}
