@@ -8,4 +8,6 @@ version:
 draft: false
 ---
 
-Feature X will be removed
+#### Feature X will be removed
+
+Description in **Markdown** format
