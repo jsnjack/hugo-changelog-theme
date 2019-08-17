@@ -7,11 +7,11 @@
     <div class="container grid-lg">
         <div class="columns">
             <div class="column col-10 col-sm-12 col-mx-auto text-left">
-                {{ $paginator := .Paginate ( where .Pages.ByWeight.Reverse "Section" "released" ) }}
+                {{ $paginator := .Paginate ( where .Site.RegularPages.ByWeight.Reverse "Section" "released" ) }}
 
                 <div class="section timeline">
                     {{ if eq $paginator.PageNumber 1 }}
-                        {{ $deprecatedFeatures := where .Pages "Section" "deprecated" }}
+                        {{ $deprecatedFeatures := where .Site.RegularPages "Section" "deprecated" }}
                         {{ if $deprecatedFeatures }}
                             <div class="accordion deprecated">
                                 <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
@@ -37,7 +37,7 @@
                             </div>
                         {{ end }}
 
-                        {{ $experimentalPages := where .Pages "Section" "experimental" }}
+                        {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
                         {{ if $experimentalPages }}
                             <div class="timeline-item experimental">
                                 <div class="timeline-left">
