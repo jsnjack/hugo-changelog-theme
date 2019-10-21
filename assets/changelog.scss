@@ -4,6 +4,7 @@ $tag-deprecated: #acb3c2;
 $tag-removed: #2176ff;
 $tag-fixed: #a1548b;
 $tag-security: #e85600;
+$tag-performance: deeppink;
 
 // $primary-color: #e54747;
 
@@ -66,6 +67,11 @@ $tag-security: #e85600;
 .tag-added {
     background: $tag-added;
 }
+
+.tag-performance {
+    background: $tag-performance;
+}
+
 .tag-changed {
     background: $tag-changed;
 }

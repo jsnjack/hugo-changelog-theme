@@ -6,4 +6,4 @@ version:
 ---
 
 - {{% tag fixed %}} Space between `ul` elements
-
+- {{% tag performance %}} It is now 1337 times faster
