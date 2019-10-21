@@ -14,7 +14,7 @@ CONTENT_DIR = os.path.join(CHANGELOG_SITE_DIR, "content/")
 RELEASED_DIR = os.path.join(CONTENT_DIR, "released/")
 EXPERIMENTAL_DIR = os.path.join(CONTENT_DIR, "experimental/")
 
-INTRO_SAMPLE = "<!-- Available tags are: added, changed, deprecated, removed, fixed, security -->"
+INTRO_SAMPLE = "<!-- Available tags are: added, changed, deprecated, removed, fixed, performance, security -->"
 
 
 @contextmanager
