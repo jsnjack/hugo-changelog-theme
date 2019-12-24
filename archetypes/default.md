@@ -8,4 +8,4 @@ draft: true
 ---
 
 <!-- Available tags are: added, changed, deprecated, removed, fixed, performance, security -->
-- {{% tag added %}} New functionality
+- {{< tag added >}} New functionality
