@@ -92,7 +92,8 @@ $tag-performance: deeppink;
     background: $tag-security;
 }
 
-.changes li {
+.changes > li, .changes-entry > ul > li {
+    // hide top-level list bullets
     list-style: none;
 }
 
