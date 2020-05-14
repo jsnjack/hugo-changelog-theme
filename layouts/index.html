@@ -44,7 +44,7 @@
                                     <div class="timeline-icon"></div>
                                 </div>
                                 <div class="changes timeline-content">
-                                    <div>
+                                    <div class="changes-entry">
                                         {{ range $experimentalPages }}
                                             {{ .Content }}
                                         {{ end }}
@@ -64,7 +64,7 @@
                                     {{ .Params.Version }} {{ .Title }}
                                 </h4>
                                 <small>{{ .Params.Subtitle }}</small>
-                                <div>
+                                <div class="changes-entry">
                                     {{ .Content }}
                                 </div>
                             </div>
