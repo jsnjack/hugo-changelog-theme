@@ -148,3 +148,8 @@ li code {
     border-radius: 3px;
     vertical-align: middle;
 }
+
+// https://github.com/jsnjack/hugo-changelog-theme/issues/18
+.accordion input:checked ~ .accordion-body, .accordion[open] .accordion-body {
+    max-height: 100rem;
+}
