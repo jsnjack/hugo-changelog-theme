@@ -14,7 +14,7 @@ CONTENT_DIR = os.path.join(CHANGELOG_SITE_DIR, "content/")
 RELEASED_DIR = os.path.join(CONTENT_DIR, "released/")
 EXPERIMENTAL_DIR = os.path.join(CONTENT_DIR, "experimental/")
 
-INTRO_SAMPLE = "<!-- Available tags are: added, changed, deprecated, removed, fixed, performance, security -->"
+INTRO_SAMPLE = "<!-- Available tags are: added, changed, deprecated, removed, fixed, performance, security, self-hosted -->"
 
 
 @contextmanager
@@ -127,7 +127,9 @@ def print_release_version():
     Returns release version
     """
     version = get_current_human_version(get_current_internal_version())
-    is_experimental = len([x for x in os.listdir(EXPERIMENTAL_DIR) if x.endswith(".md")]) > 0
+    is_experimental = (
+        len([x for x in os.listdir(EXPERIMENTAL_DIR) if x.endswith(".md")]) > 0
+    )
     print("%s%s" % (version, "+" if is_experimental else ""))
 
 
