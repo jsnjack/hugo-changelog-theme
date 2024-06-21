@@ -67,7 +67,7 @@ A [Hugo](https://gohugo.io/) theme to display a changelog
 
 
 # Shortcodes
- - `{{< tag fixed >}}` - create a specific tag before entry text. Available tag types are: added, changed, fixed, deprecated, removed, performance, security
+ - `{{< tag fixed >}}` - create a specific tag before entry text. Available tag types are: added, changed, fixed, deprecated, removed, performance, security, self-hosted
 
 # Settings
 ```

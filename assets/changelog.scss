@@ -5,6 +5,7 @@ $tag-removed: #2176ff;
 $tag-fixed: #a1548b;
 $tag-security: #e85600;
 $tag-performance: deeppink;
+$tag-self-hosted: black;
 
 // $primary-color: #e54747;
 
@@ -90,6 +91,10 @@ $tag-performance: deeppink;
 
 .tag-security {
     background: $tag-security;
+}
+
+.tag-self-hosted {
+    background: $tag-self-hosted;
 }
 
 .changes > li, .changes-entry > ul > li {

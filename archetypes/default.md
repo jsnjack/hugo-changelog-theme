@@ -7,5 +7,5 @@ version:
 draft: true
 ---
 
-<!-- Available tags are: added, changed, deprecated, removed, fixed, performance, security -->
+<!-- Available tags are: added, changed, deprecated, removed, fixed, performance, security, self-hosted -->
 - {{< tag added >}} New functionality
