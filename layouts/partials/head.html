@@ -20,7 +20,7 @@
   {{ end -}}
 
   {{ $scss := resources.Get "changelog.scss" }}
-  {{ $style := $scss | resources.ToCSS | resources.Minify }}
+  {{ $style := $scss | css.Sass | resources.Minify }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
   {{ range .Site.Params.customCSS -}}
