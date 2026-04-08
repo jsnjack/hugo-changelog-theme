@@ -49,7 +49,7 @@
             <article class="release-entry">
                 <div class="release-meta">
                     {{ with .Params.Version }}<span class="version">{{ . }}</span>{{ end }}
-                    <span class="date">{{ .Title }}</span>
+                    {{ with .Params.Subtitle }}<span class="date">{{ . }}</span>{{ end }}
                 </div>
                 <div class="release-changes">
                     {{ .Content }}
