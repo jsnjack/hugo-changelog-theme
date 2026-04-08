@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Releaseds on Hugo Changelog</title>
+    <link>http://localhost:1313/released/</link>
+    <description>Recent content in Releaseds on Hugo Changelog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Sep 2019 20:46:47 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/released/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(2018-08-15)</title>
+      <link>http://localhost:1313/released/1/</link>
+      <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/released/1/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Keep end tags&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-added&#34;&gt;added&lt;/span&gt;&#xA; Fix permissions when creating new folders&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Fix handling of taxonomy terms containing slashes&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>(2018-08-17)</title>
+      <link>http://localhost:1313/released/2/</link>
+      <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/released/2/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Skip installing postcss due to failure on build server&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Trusty Tahr</title>
+      <link>http://localhost:1313/released/3/</link>
+      <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/released/3/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Fix .Site.Params case regression&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Do not strip IE conditional statements&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/released/4/</link>
+      <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/released/4/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-removed&#34;&gt;removed&lt;/span&gt;&#xA; Remove unused files from Git, Perl, etc.&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-added&#34;&gt;added&lt;/span&gt;&#xA; Add nodejs to allow PostCSS to work&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Xenial Xerus</title>
+      <link>http://localhost:1313/released/15/</link>
+      <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/released/15/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-added&#34;&gt;added&lt;/span&gt;&#xA; Add a test for template variable overwrite&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-changed&#34;&gt;changed&lt;/span&gt;&#xA; Include language code in REF_NOT_FOUND errors&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Improve minifier MIME type resolution&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-deprecated&#34;&gt;deprecated&lt;/span&gt;&#xA; Set GO111MODULE=on for mage install&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-removed&#34;&gt;removed&lt;/span&gt;&#xA; Add instruction to install PostCSS when missing&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-security&#34;&gt;security&lt;/span&gt;&#xA; Update snapcraft build config to Go 1.11&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-self-hosted&#34;&gt;self-hosted&lt;/span&gt;&#xA; Chromium upgraded to version 48&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Multiline example</title>
+      <link>http://localhost:1313/released/16/</link>
+      <pubDate>Mon, 02 Sep 2019 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/released/16/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-added&#34;&gt;added&lt;/span&gt;&#xA; Multiline entry:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Section 1&lt;/li&gt;&#xA;&lt;li&gt;Section 2&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sub-section 1&lt;/li&gt;&#xA;&lt;li&gt;Sub-section 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-changed&#34;&gt;changed&lt;/span&gt;&#xA; Include language code in REF_NOT_FOUND errors&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experimentals on Hugo Changelog</title>
+    <link>http://localhost:1313/experimental/</link>
+    <description>Recent content in Experimentals on Hugo Changelog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Sep 2018 20:46:47 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/experimental/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(2018-09-15)</title>
+      <link>http://localhost:1313/experimental/ex/</link>
+      <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/experimental/ex/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-added&#34;&gt;added&lt;/span&gt;&#xA; Add a test for template variable overwrite&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-changed&#34;&gt;changed&lt;/span&gt;&#xA; &lt;code&gt;Update to Go&lt;/code&gt; 1.11&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>(2018-09-15)</title>
+      <link>http://localhost:1313/experimental/ex2/</link>
+      <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/experimental/ex2/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Space between &lt;code&gt;ul&lt;/code&gt; elements&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-performance&#34;&gt;performance&lt;/span&gt;&#xA; It is now 1337 times faster&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
