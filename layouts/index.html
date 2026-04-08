@@ -7,67 +7,55 @@
     <div class="content-container">
         {{ $paginator := .Paginate ( where .Site.RegularPages.ByWeight.Reverse "Section" "released" ) }}
 
-        <div class="section timeline">
-            {{ if eq $paginator.PageNumber 1 }}
-                {{ $deprecatedFeatures := where .Site.RegularPages "Section" "deprecated" }}
-                {{ if $deprecatedFeatures }}
-                    <details class="deprecated">
-                        <summary>
-                            <span class="arrow"></span>
-                            <span class="badge-warning">{{ len ($deprecatedFeatures) }}</span> deprecated features
-                        </summary>
-                        <div class="accordion-body">
-                            {{ range ($deprecatedFeatures.ByParam "removal_date").Reverse }}
-                            <div class="timeline-item">
-                                <div class="timeline-left">
-                                    <div class="timeline-icon"></div>
-                                </div>
-                                <div class="timeline-content">
-                                    <div>
-                                        <h6>{{ .Params.removal_date }}</h6>
-                                        {{ .Content }}
-                                    </div>
-                                </div>
+        {{ if eq $paginator.PageNumber 1 }}
+            {{ $deprecatedFeatures := where .Site.RegularPages "Section" "deprecated" }}
+            {{ if $deprecatedFeatures }}
+                <details class="deprecated">
+                    <summary>
+                        <span class="arrow"></span>
+                        <span class="badge-warning">{{ len ($deprecatedFeatures) }}</span> deprecated features
+                    </summary>
+                    <div class="accordion-body">
+                        {{ range ($deprecatedFeatures.ByParam "removal_date").Reverse }}
+                        <div class="release-entry">
+                            <div class="release-meta">
+                                <h6>{{ .Params.removal_date }}</h6>
                             </div>
-                            {{ end }}
-                        </div>
-                    </details>
-                {{ end }}
-
-                {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
-                {{ if $experimentalPages }}
-                    <div class="timeline-item experimental">
-                        <div class="timeline-left">
-                            <div class="timeline-icon"></div>
-                        </div>
-                        <div class="changes timeline-content">
-                            <div class="changes-entry">
-                                {{ range $experimentalPages }}
-                                    {{ .Content }}
-                                {{ end }}
+                            <div class="release-changes">
+                                {{ .Content }}
                             </div>
                         </div>
+                        {{ end }}
                     </div>
-                {{ end }}
+                </details>
             {{ end }}
 
-            {{ range $paginator.Pages }}
-                <div class="timeline-item">
-                    <div class="timeline-left">
-                        <div class="timeline-icon"></div>
+            {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
+            {{ if $experimentalPages }}
+                <div class="release-entry experimental">
+                    <div class="release-meta">
+                        <span class="version">Upcoming</span>
                     </div>
-                    <div class="changes timeline-content">
-                        <h4>
-                            {{ .Params.Version }} {{ .Title }}
-                        </h4>
-                        <small>{{ .Params.Subtitle }}</small>
-                        <div class="changes-entry">
+                    <div class="release-changes">
+                        {{ range $experimentalPages }}
                             {{ .Content }}
-                        </div>
+                        {{ end }}
                     </div>
                 </div>
             {{ end }}
-        </div>
+        {{ end }}
+
+        {{ range $paginator.Pages }}
+            <div class="release-entry">
+                <div class="release-meta">
+                    {{ with .Params.Version }}<span class="version">{{ . }}</span>{{ end }}
+                    <span class="date">{{ .Title }}</span>
+                </div>
+                <div class="release-changes">
+                    {{ .Content }}
+                </div>
+            </div>
+        {{ end }}
 
         <div class="section centered">
             {{ partial "pagination.html" . }}
