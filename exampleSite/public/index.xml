@@ -72,6 +72,13 @@
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-added&#34;&gt;added&lt;/span&gt;&#xA; Support for &lt;a href=&#34;http://example.com&#34;&gt;Hugo Modules&lt;/a&gt; in theme configuration&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-changed&#34;&gt;changed&lt;/span&gt;&#xA; Update &lt;code&gt;postcss-cli&lt;/code&gt; to v7.0 — see &lt;a href=&#34;http://example.com&#34;&gt;migration guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Fix anchor links not working on &lt;a href=&#34;http://example.com&#34;&gt;paginated pages&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-security&#34;&gt;security&lt;/span&gt;&#xA; Patch XSS vulnerability in &lt;code&gt;markdownify&lt;/code&gt; — details in &lt;a href=&#34;http://example.com&#34;&gt;advisory&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-performance&#34;&gt;performance&lt;/span&gt;&#xA; Reduce build time by 40% for sites with &amp;gt;1000 pages&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
+      <title>(2019-05-20)</title>
+      <link>http://localhost:1313/released/18/</link>
+      <pubDate>Mon, 20 May 2019 10:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/released/18/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-added&#34;&gt;added&lt;/span&gt;&#xA; New webhook categories for Spaces: &lt;code&gt;space.session.ended&lt;/code&gt;, &lt;code&gt;space.session.queued&lt;/code&gt;, &lt;code&gt;space.session.screenshot&lt;/code&gt;, &lt;code&gt;space.session.participant_joined&lt;/code&gt;, &lt;code&gt;space.session.invitation&lt;/code&gt;, &lt;code&gt;space.recording.started&lt;/code&gt;, &lt;code&gt;space.recording.ended&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-changed&#34;&gt;changed&lt;/span&gt;&#xA; Updated &lt;code&gt;config.toml&lt;/code&gt; parsing to support &lt;code&gt;enableGitInfo&lt;/code&gt; and &lt;code&gt;enableRobotsTXT&lt;/code&gt; options&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Fix &lt;code&gt;markdownify&lt;/code&gt; not rendering inline &lt;code&gt;code&lt;/code&gt; elements correctly in shortcodes&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title></title>
       <link>http://localhost:1313/deprecated/depr/</link>
       <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
