@@ -1,9 +1,9 @@
 {{ partial "head.html" . }}
-<div class="section text-center">
+<header class="section text-center">
     {{ partial "logo.html" . }}
-</div>
+</header>
 
-<div class="content">
+<main class="content">
     <div class="content-container">
         {{ $paginator := .Paginate ( where .Site.RegularPages.ByWeight.Reverse "Section" "released" ) }}
 
@@ -17,14 +17,14 @@
                     </summary>
                     <div class="accordion-body">
                         {{ range ($deprecatedFeatures.ByParam "removal_date").Reverse }}
-                        <div class="release-entry">
+                        <article class="release-entry">
                             <div class="release-meta">
-                                <h6>{{ .Params.removal_date }}</h6>
+                                <time>{{ .Params.removal_date }}</time>
                             </div>
                             <div class="release-changes">
                                 {{ .Content }}
                             </div>
-                        </div>
+                        </article>
                         {{ end }}
                     </div>
                 </details>
@@ -32,7 +32,7 @@
 
             {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
             {{ if $experimentalPages }}
-                <div class="release-entry experimental">
+                <article class="release-entry experimental">
                     <div class="release-meta">
                         <span class="version">Upcoming</span>
                     </div>
@@ -41,12 +41,12 @@
                             {{ .Content }}
                         {{ end }}
                     </div>
-                </div>
+                </article>
             {{ end }}
         {{ end }}
 
         {{ range $paginator.Pages }}
-            <div class="release-entry">
+            <article class="release-entry">
                 <div class="release-meta">
                     {{ with .Params.Version }}<span class="version">{{ . }}</span>{{ end }}
                     <span class="date">{{ .Title }}</span>
@@ -54,12 +54,12 @@
                 <div class="release-changes">
                     {{ .Content }}
                 </div>
-            </div>
+            </article>
         {{ end }}
 
         <div class="section centered">
             {{ partial "pagination.html" . }}
         </div>
     </div>
-</div>
+</main>
 {{ partial "footer.html" . }}

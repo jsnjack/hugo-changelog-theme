@@ -19,15 +19,15 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-primary: #99d1ce;
-        --color-text: #d3ebe9;
-        --color-text-light: #599cab;
-        --color-border: #0a3749;
-        --color-bg: #0c1014;
+        --color-primary: #d1d5db;
+        --color-text: #e5e7eb;
+        --color-text-light: #6b7280;
+        --color-border: #374151;
+        --color-bg: #111827;
 
         --tag-added: #34d399;
         --tag-changed: #fbbf24;
-        --tag-deprecated: #a0aec0;
+        --tag-deprecated: #9ca3af;
         --tag-removed: #f87171;
         --tag-fixed: #38bdf8;
         --tag-security: #fb923c;
@@ -36,16 +36,15 @@
         --tag-internal: #a78bfa;
     }
 
+    .tag-changed,
+    .tag-added,
+    .tag-fixed,
     .badge-warning {
-        color: #0c1014;
+        color: #111827;
     }
 
-    li code {
-        background-color: rgba(153, 209, 206, 0.1);
-    }
-
-    .full-screen-message {
-        color: var(--color-text);
+    .pagination .page-item.active a {
+        color: #111827;
     }
 }
 
@@ -147,6 +146,9 @@ ul, ol {
 .release-meta {
     flex: 0 0 140px;
     padding-top: .15rem;
+    position: sticky;
+    top: 1rem;
+    align-self: flex-start;
 }
 
 .release-meta .version {
@@ -201,6 +203,12 @@ ul, ol {
 /* ---- Experimental ---- */
 .experimental .release-meta .version {
     color: var(--color-text);
+}
+
+/* ---- Deprecated time ---- */
+.deprecated .release-meta time {
+    font-size: .75rem;
+    color: var(--color-text-light);
 }
 
 /* ---- Accordion (details/summary) ---- */
@@ -334,9 +342,16 @@ li code {
     padding: 0.2em 0.4em;
     margin: 0;
     font-size: 85%;
-    background-color: rgba(27, 31, 35, 0.05);
+    background-color: rgba(27, 31, 35, 0.1);
     border-radius: 3px;
     vertical-align: middle;
+}
+
+@media (prefers-color-scheme: dark) {
+    li code {
+        background-color: #4b5563;
+        color: #f9fafb;
+    }
 }
 
 /* ---- Full screen message (404, not implemented) ---- */
