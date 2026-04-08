@@ -4,16 +4,16 @@ Hugo Changelog Theme
 A [Hugo](https://gohugo.io/) theme to display a changelog
 
 # Features
- - Build with [Spectre.css](https://picturepan2.github.io/spectre/) (All unused components are disabled)
+ - Dark mode (auto-detects system preference)
+ - Two-column layout (version/date + changes)
  - Pagination
  - Mobile friendly
 
 # How to install
- - Clone the repository with `--recursive` flag as the theme includes submodule
+ - Clone the repository
    ```bash
-   git clone git@github.com:jsnjack/hugo-changelog-theme.git --recursive
+   git clone git@github.com:jsnjack/hugo-changelog-theme.git
    ```
- - Use hugo extended version
 
 # Workflow
 
