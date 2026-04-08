@@ -146,9 +146,6 @@ ul, ol {
 .release-meta {
     flex: 0 0 140px;
     padding-top: .15rem;
-    position: sticky;
-    top: 1rem;
-    align-self: flex-start;
 }
 
 .release-meta .version {
@@ -287,9 +284,9 @@ ul, ol {
 
 .tag-added { background: var(--tag-added); }
 .tag-changed { background: var(--tag-changed); }
+.tag-fixed { background: var(--tag-fixed); }
 .tag-deprecated { background: var(--tag-deprecated); }
 .tag-removed { background: var(--tag-removed); }
-.tag-fixed { background: var(--tag-fixed); }
 .tag-security { background: var(--tag-security); }
 .tag-performance { background: var(--tag-performance); }
 .tag-self-hosted { background: var(--tag-self-hosted); }
@@ -338,7 +335,7 @@ ul, ol {
 }
 
 /* ---- Content styles ---- */
-li code {
+.release-changes code {
     padding: 0.2em 0.4em;
     margin: 0;
     font-size: 85%;
@@ -348,7 +345,7 @@ li code {
 }
 
 @media (prefers-color-scheme: dark) {
-    li code {
+    .release-changes code {
         background-color: #4b5563;
         color: #f9fafb;
     }
@@ -364,7 +361,7 @@ li code {
     min-height: 100vh;
     font-size: 200%;
     text-decoration: none;
-    color: #363636;
+    color: var(--color-text);
 }
 
 .full-screen-message a {
