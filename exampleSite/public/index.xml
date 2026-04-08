@@ -65,6 +65,13 @@
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-added&#34;&gt;added&lt;/span&gt;&#xA; Multiline entry:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Section 1&lt;/li&gt;&#xA;&lt;li&gt;Section 2&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sub-section 1&lt;/li&gt;&#xA;&lt;li&gt;Sub-section 2&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-changed&#34;&gt;changed&lt;/span&gt;&#xA; Include language code in REF_NOT_FOUND errors&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
+      <title>(2019-03-15)</title>
+      <link>http://localhost:1313/released/17/</link>
+      <pubDate>Fri, 15 Mar 2019 10:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/released/17/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-added&#34;&gt;added&lt;/span&gt;&#xA; Support for &lt;a href=&#34;http://example.com&#34;&gt;Hugo Modules&lt;/a&gt; in theme configuration&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-changed&#34;&gt;changed&lt;/span&gt;&#xA; Update &lt;code&gt;postcss-cli&lt;/code&gt; to v7.0 — see &lt;a href=&#34;http://example.com&#34;&gt;migration guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-fixed&#34;&gt;fixed&lt;/span&gt;&#xA; Fix anchor links not working on &lt;a href=&#34;http://example.com&#34;&gt;paginated pages&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-security&#34;&gt;security&lt;/span&gt;&#xA; Patch XSS vulnerability in &lt;code&gt;markdownify&lt;/code&gt; — details in &lt;a href=&#34;http://example.com&#34;&gt;advisory&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;span class=&#34;tag tag-performance&#34;&gt;performance&lt;/span&gt;&#xA; Reduce build time by 40% for sites with &amp;gt;1000 pages&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title></title>
       <link>http://localhost:1313/deprecated/depr/</link>
       <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>

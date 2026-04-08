@@ -46,6 +46,7 @@
     .pagination .page-item.active a {
         color: #111827;
     }
+
 }
 
 /* ---- Reset ---- */
@@ -92,13 +93,14 @@ p {
 }
 
 a {
-    color: var(--color-primary);
-    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 a:hover,
 a:focus {
-    text-decoration: underline;
+    color: var(--color-primary);
 }
 
 small {
