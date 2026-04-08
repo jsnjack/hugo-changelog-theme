@@ -1,11 +1,12 @@
 $tag-added: #32b643;
-$tag-changed:#ffb700;
+$tag-changed: #ffb700;
 $tag-deprecated: #acb3c2;
 $tag-removed: #2176ff;
 $tag-fixed: #a1548b;
 $tag-security: #e85600;
 $tag-performance: deeppink;
 $tag-self-hosted: black;
+$tag-internal: #5755d9;
 
 // $primary-color: #e54747;
 
@@ -97,7 +98,12 @@ $tag-self-hosted: black;
     background: $tag-self-hosted;
 }
 
-.changes > li, .changes-entry > ul > li {
+.tag-internal {
+    background: $tag-internal;
+}
+
+.changes>li,
+.changes-entry>ul>li {
     // hide top-level list bullets
     list-style: none;
 }
@@ -117,6 +123,7 @@ $tag-self-hosted: black;
     text-decoration: none;
     color: #363636;
 }
+
 .full-screen-message a {
     display: inline-block;
 }
@@ -149,13 +156,14 @@ li code {
     padding: 0.2em 0.4em;
     margin: 0;
     font-size: 85%;
-    background-color: rgba(27,31,35,0.05);
+    background-color: rgba(27, 31, 35, 0.05);
     border-radius: 3px;
     vertical-align: middle;
 }
 
 // https://github.com/jsnjack/hugo-changelog-theme/issues/18
-.accordion input:checked ~ .accordion-body, .accordion[open] .accordion-body {
+.accordion input:checked~.accordion-body,
+.accordion[open] .accordion-body {
     max-height: 100rem;
     margin-bottom: 1rem;
 }
