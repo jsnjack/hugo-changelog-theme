@@ -283,6 +283,14 @@ ol {
     margin: 0 0 .2rem;
 }
 
+.deprecated .accordion-body .release-changes>ul {
+    padding-left: 1.2rem;
+}
+
+.deprecated .accordion-body .release-changes>ul>li {
+    list-style: disc;
+}
+
 /* ---- Badge ---- */
 .badge-warning {
     display: inline-block;
