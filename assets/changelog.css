@@ -47,6 +47,10 @@
         color: #111827;
     }
 
+    .release-changes code {
+        background-color: #4b5563;
+        color: #f9fafb;
+    }
 }
 
 /* ---- Reset ---- */
@@ -283,11 +287,11 @@ ol {
     margin: 0 0 .2rem;
 }
 
-.deprecated .accordion-body .release-changes>ul {
+.deprecated .release-changes>ul {
     padding-left: 1.2rem;
 }
 
-.deprecated .accordion-body .release-changes>ul>li {
+.deprecated .release-changes>ul>li {
     list-style: disc;
 }
 
@@ -403,12 +407,7 @@ ol {
     vertical-align: middle;
 }
 
-@media (prefers-color-scheme: dark) {
-    .release-changes code {
-        background-color: #4b5563;
-        color: #f9fafb;
-    }
-}
+
 
 /* ---- Full screen message (404, not implemented) ---- */
 .full-screen-message {
