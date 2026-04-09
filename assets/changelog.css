@@ -123,16 +123,14 @@ p {
 }
 
 a {
-    color: var(--color-primary);
+    color: inherit;
     text-decoration: underline;
-    text-decoration-color: color-mix(in srgb, var(--color-primary) 40%, transparent);
     text-underline-offset: 3px;
-    transition: text-decoration-color .15s ease;
 }
 
 a:hover,
 a:focus {
-    text-decoration-color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 :focus-visible {
