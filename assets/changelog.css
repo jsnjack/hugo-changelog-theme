@@ -6,6 +6,9 @@
     --color-border: #e5e7eb;
     --color-bg: #fff;
 
+    --color-code-bg: rgba(27, 31, 35, 0.1);
+    --color-code-text: inherit;
+
     --tag-added: #34d399;
     --tag-changed: #fbbf24;
     --tag-deprecated: #a0aec0;
@@ -24,6 +27,9 @@
         --color-text-light: #565b66;
         --color-border: #2c3441;
         --color-bg: #0e131f;
+
+        --color-code-bg: #4b5563;
+        --color-code-text: #f9fafb;
 
         --tag-added: #26986e;
         --tag-changed: #b58a1a;
@@ -46,11 +52,6 @@
     .pagination .page-item.active a {
         color: #111827;
     }
-
-    .release-changes code {
-        background-color: #4b5563;
-        color: #f9fafb;
-    }
 }
 
 /* ---- Reset ---- */
@@ -62,7 +63,7 @@
 
 html {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.8;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
 }
@@ -205,7 +206,6 @@ ol {
 .release-changes>ul>li {
     list-style: none;
     margin-bottom: .3rem;
-    line-height: 1.8;
 }
 
 .release-changes>ul>li>ul {
@@ -215,6 +215,17 @@ ol {
 
 .release-changes h4 {
     margin-bottom: 0;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: var(--color-code-bg);
+    color: var(--color-code-text);
+    border-radius: 3px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 @media (max-width: 600px) {
@@ -271,49 +282,38 @@ ol {
     transform: rotate(135deg);
 }
 
-/* ---- Deprecated meta ---- */
-.deprecated .release-meta time {
-    display: block;
-    font-size: .75rem;
-    color: var(--color-text-light);
-}
-
 .deprecated .release-changes h4 {
     font-size: .85rem;
     font-weight: 600;
     margin-bottom: .2rem;
 }
 
-.deprecated .release-changes > ul {
+.deprecated .release-changes>ul {
     padding-left: 1.2rem;
 }
 
-.deprecated .release-changes > ul > li {
+.deprecated .release-changes>ul>li {
     list-style: disc;
 }
 
-/* ---- Badge ---- */
+/* ---- Tags & Badge ---- */
+.tag,
 .badge-warning {
     display: inline-block;
-    background: var(--tag-changed);
-    color: #fff;
     border-radius: 5rem;
     padding: .1rem .4rem;
     line-height: 1.2;
     font-size: .7rem;
+    color: #fff;
     vertical-align: middle;
 }
 
-/* ---- Tags ---- */
 .tag {
-    display: inline;
-    border-radius: 5rem;
-    padding: .1rem .4rem;
-    line-height: 1;
-    color: #fff;
     text-transform: capitalize;
-    font-size: inherit;
-    vertical-align: baseline;
+}
+
+.badge-warning {
+    background: var(--tag-changed);
 }
 
 .tag-added {
@@ -393,18 +393,6 @@ ol {
     background: var(--color-primary);
     color: #fff;
 }
-
-/* ---- Content styles ---- */
-.release-changes code {
-    padding: 0.2em 0.4em;
-    margin: 0;
-    font-size: 85%;
-    background-color: rgba(27, 31, 35, 0.1);
-    border-radius: 3px;
-    vertical-align: middle;
-}
-
-
 
 /* ---- Full screen message (404, not implemented) ---- */
 .full-screen-message {

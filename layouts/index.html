@@ -19,8 +19,8 @@
                 {{ range ($deprecatedFeatures.ByParam "removal_date").Reverse }}
                 <article class="release-entry">
                     <div class="release-meta">
-                        {{ if .Params.removal_date }}<span class="date">remove by</span><time>{{ .Params.removal_date
-                            }}</time>{{ else }}<span class="date">no deadline</span>{{ end }}
+                        {{ if .Params.removal_date }}<span class="date">remove by</span><time class="date">{{
+                            .Params.removal_date }}</time>{{ else }}<span class="date">no deadline</span>{{ end }}
                     </div>
                     <div class="release-changes">
                         {{ .Content }}
