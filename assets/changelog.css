@@ -9,15 +9,15 @@
     --color-code-bg: rgba(27, 31, 35, 0.1);
     --color-code-text: inherit;
 
-    --tag-added: #34d399;
-    --tag-changed: #fbbf24;
-    --tag-deprecated: #a0aec0;
-    --tag-removed: #f87171;
-    --tag-fixed: #38bdf8;
-    --tag-security: #fb923c;
-    --tag-performance: #f472b6;
-    --tag-self-hosted: #64748b;
-    --tag-internal: #a78bfa;
+    --tag-added: #2fbe8a;
+    --tag-changed: #e2ac20;
+    --tag-deprecated: #909dad;
+    --tag-removed: #df6666;
+    --tag-fixed: #32aadf;
+    --tag-security: #e28336;
+    --tag-performance: #dc67a4;
+    --tag-self-hosted: #5a687d;
+    --tag-internal: #967de1;
 }
 
 @media (prefers-color-scheme: dark) {
