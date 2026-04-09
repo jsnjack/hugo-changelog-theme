@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deprecateds on Hugo Changelog</title>
+    <link>http://localhost:1313/deprecated/</link>
+    <description>Recent content in Deprecateds on Hugo Changelog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Sep 2018 20:46:47 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/deprecated/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/deprecated/depr/</link>
+      <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/deprecated/depr/</guid>
+      <description>&lt;h4 id=&#34;feature-x-will-be-removed&#34;&gt;Feature X will be removed&lt;/h4&gt;&#xA;&lt;p&gt;Lorem markdownum fulmen repetita atro praecipitem tela accepto quantumque&#xA;funeribus spes; casus memorabile. &lt;a href=&#34;http://ora-tyria.net/&#34;&gt;Concidit culmine&lt;/a&gt;,&#xA;unda ad &lt;strong&gt;adhuc&lt;/strong&gt; liquidi cognata, sua cetera; ceu iam facientia quem. Regina&#xA;referre tibi places cum et meritorum, &lt;strong&gt;in atque&lt;/strong&gt;, capillos et deos. Di sua&#xA;cepit excidit pectore probarunt fatale muta vento in Tamasenum.&lt;/p&gt;&#xA;&lt;p&gt;Templa hunc, exosa felix os temerasse Boreas facies nam ferre regimen! Fidemque&#xA;signans stant Volturnus dicta vides, utque caelo pallidiora.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/deprecated/depr2/</link>
+      <pubDate>Sun, 02 Sep 2018 20:46:47 +0200</pubDate>
+      <guid>http://localhost:1313/deprecated/depr2/</guid>
+      <description>&lt;h4 id=&#34;feature-y-will-be-removed&#34;&gt;Feature Y will be removed&lt;/h4&gt;&#xA;&lt;p&gt;Lorem markdownum fulmen repetita atro praecipitem tela accepto quantumque&#xA;funeribus spes; casus memorabile. &lt;a href=&#34;http://ora-tyria.net/&#34;&gt;Concidit culmine&lt;/a&gt;,&#xA;unda ad &lt;strong&gt;adhuc&lt;/strong&gt; liquidi cognata, sua cetera; ceu iam facientia quem. Regina&#xA;referre tibi places cum et meritorum, &lt;strong&gt;in atque&lt;/strong&gt;, capillos et deos. Di sua&#xA;cepit excidit pectore probarunt fatale muta vento in Tamasenum.&lt;/p&gt;&#xA;&lt;p&gt;Templa hunc, exosa felix os temerasse Boreas facies nam ferre regimen! Fidemque&#xA;signans stant Volturnus dicta vides, utque caelo pallidiora.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
