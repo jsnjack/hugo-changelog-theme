@@ -151,7 +151,7 @@ ol {
 
 /* ---- Layout ---- */
 .content-container {
-    max-width: 900px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
