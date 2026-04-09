@@ -8,53 +8,54 @@
         {{ $paginator := .Paginate ( where .Site.RegularPages.ByWeight.Reverse "Section" "released" ) }}
 
         {{ if eq $paginator.PageNumber 1 }}
-            {{ $deprecatedFeatures := where .Site.RegularPages "Section" "deprecated" }}
-            {{ if $deprecatedFeatures }}
-                <details class="deprecated">
-                    <summary>
-                        <span class="arrow"></span>
-                        <span class="badge-warning">{{ len ($deprecatedFeatures) }}</span> deprecated features
-                    </summary>
-                    <div class="accordion-body">
-                        {{ range ($deprecatedFeatures.ByParam "removal_date").Reverse }}
-                        <article class="release-entry">
-                            <div class="release-meta">
-                                <time>{{ .Params.removal_date }}</time>
-                            </div>
-                            <div class="release-changes">
-                                {{ .Content }}
-                            </div>
-                        </article>
-                        {{ end }}
-                    </div>
-                </details>
-            {{ end }}
-
-            {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
-            {{ if $experimentalPages }}
-                <article class="release-entry experimental">
+        {{ $deprecatedFeatures := where .Site.RegularPages "Section" "deprecated" }}
+        {{ if $deprecatedFeatures }}
+        <details class="deprecated">
+            <summary>
+                <span class="arrow"></span>
+                <span class="badge-warning">{{ len ($deprecatedFeatures) }}</span> Deprecation notices
+            </summary>
+            <div class="accordion-body">
+                {{ range ($deprecatedFeatures.ByParam "removal_date").Reverse }}
+                <article class="release-entry">
                     <div class="release-meta">
-                        <span class="version">Upcoming</span>
+                        {{ if .Params.removal_date }}<span class="date">remove by</span><time>{{ .Params.removal_date
+                            }}</time>{{ else }}<span class="date">no deadline</span>{{ end }}
                     </div>
                     <div class="release-changes">
-                        {{ range $experimentalPages }}
-                            {{ .Content }}
-                        {{ end }}
+                        {{ .Content }}
                     </div>
                 </article>
-            {{ end }}
+                {{ end }}
+            </div>
+        </details>
+        {{ end }}
+
+        {{ $experimentalPages := where .Site.RegularPages "Section" "experimental" }}
+        {{ if $experimentalPages }}
+        <article class="release-entry experimental">
+            <div class="release-meta">
+                <span class="version">Upcoming</span>
+            </div>
+            <div class="release-changes">
+                {{ range $experimentalPages }}
+                {{ .Content }}
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
         {{ end }}
 
         {{ range $paginator.Pages }}
-            <article class="release-entry">
-                <div class="release-meta">
-                    {{ with .Params.Version }}<span class="version">{{ . }}</span>{{ end }}
-                    {{ with .Params.Subtitle }}<span class="date">{{ . }}</span>{{ end }}
-                </div>
-                <div class="release-changes">
-                    {{ .Content }}
-                </div>
-            </article>
+        <article class="release-entry">
+            <div class="release-meta">
+                {{ with .Params.Version }}<span class="version">{{ . }}</span>{{ end }}
+                {{ with .Params.Subtitle }}<span class="date">{{ . }}</span>{{ end }}
+            </div>
+            <div class="release-changes">
+                {{ .Content }}
+            </div>
+        </article>
         {{ end }}
 
         <div class="section centered">

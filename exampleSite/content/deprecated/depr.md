@@ -1,25 +1,15 @@
 ---
 title:
-subtitle: created on {{ now.Format "2006-01-02" }}
-date: 2018-09-02T20:46:47+02:00
-removal_date: 2019-07-07
+date: 2024-01-10T10:00:00+00:00
+removal_date: 2026-06-01
 weight:
 version:
 ---
 
-#### Feature X will be removed
+#### `tabIndex` parameter in session events
 
-Lorem markdownum fulmen repetita atro praecipitem tela accepto quantumque
-funeribus spes; casus memorabile. [Concidit culmine](http://ora-tyria.net/),
-unda ad **adhuc** liquidi cognata, sua cetera; ceu iam facientia quem. Regina
-referre tibi places cum et meritorum, **in atque**, capillos et deos. Di sua
-cepit excidit pectore probarunt fatale muta vento in Tamasenum.
+`tabIndex` parameter is deprecated for session events `tab_control`, `tab_paused`, `tab_resumed`. Use `ssid` parameter instead.
 
-Templa hunc, exosa felix os temerasse Boreas facies nam ferre regimen! Fidemque
-signans stant Volturnus dicta vides, utque caelo pallidiora.
-
-Tandem stat surgis. Rerum nati arbitrio, nactusque dilectos a!
-
-- one
-- two
-- three
+- Update all `tab_control` listeners to read `ssid` instead of `tabIndex`
+- Update all `tab_paused` listeners to read `ssid` instead of `tabIndex`
+- Update all `tab_resumed` listeners to read `ssid` instead of `tabIndex`

@@ -173,7 +173,8 @@ ol {
 }
 
 .release-meta {
-    flex: 0 0 140px;
+    flex: 0 0 180px;
+    min-width: 0;
     padding-top: .15rem;
 }
 
@@ -232,17 +233,9 @@ ol {
     color: var(--color-text);
 }
 
-/* ---- Deprecated time ---- */
-.deprecated .release-meta time {
-    font-size: .75rem;
-    color: var(--color-text-light);
-}
-
 /* ---- Accordion (details/summary) ---- */
 .deprecated {
     border-bottom: 1px solid var(--color-border);
-    padding-bottom: .4rem;
-    margin-bottom: .4rem;
 }
 
 .deprecated summary {
@@ -278,20 +271,24 @@ ol {
     transform: rotate(135deg);
 }
 
-.deprecated .accordion-body {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+/* ---- Deprecated meta ---- */
+.deprecated .release-meta time {
+    display: block;
+    font-size: .75rem;
+    color: var(--color-text-light);
 }
 
-.deprecated .accordion-body p {
-    margin: 0 0 .2rem;
+.deprecated .release-changes h4 {
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: .2rem;
 }
 
-.deprecated .release-changes>ul {
+.deprecated .release-changes > ul {
     padding-left: 1.2rem;
 }
 
-.deprecated .release-changes>ul>li {
+.deprecated .release-changes > ul > li {
     list-style: disc;
 }
 
