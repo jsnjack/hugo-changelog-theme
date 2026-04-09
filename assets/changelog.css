@@ -239,6 +239,11 @@ code {
 }
 
 @media (max-width: 600px) {
+    html {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
     .release-entry {
         flex-direction: column;
         gap: .4rem;
